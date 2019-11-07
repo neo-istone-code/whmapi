@@ -41,7 +41,7 @@ echo "</head>";
 
 #sendmail function using smtp
 function Nmail($Host,$smtp_Username,$smtp_Password,$smtp_Port,$to,$xsubject,$body){ // this function requires class  call a phpmailer class downlaad for this url https://www.neoistone.com/phpmailer.zip
-include_once("./mail/class/class.phpmailer.php");
+include_once("class.phpmailer.php");
 $mail = new PHPMailer();
 $mail->IsSMTP(); // telling the class to use SMTP
 $mail->Host = $Host; // SMTP server
